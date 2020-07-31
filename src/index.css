@@ -12,6 +12,18 @@ body {
   color:white;
 }
 
+.wrapper {
+  width: 40%;
+  border: solid white;
+  margin:auto;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.wrapper input[type=text] {
+  width: 70%;
+  margin-right: 1rem;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
