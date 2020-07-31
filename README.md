@@ -1,8 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+- This app filters a collection of names using React.js
+- Filter by url parameter is available. Example: http://localhost:3000/ca (shows names that contain string "ca" in them).
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs the required dependencies.
 
 ### `yarn start`
 
