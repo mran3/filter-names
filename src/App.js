@@ -1,10 +1,17 @@
 import React from 'react';
-import './App.css';
-import SearchNames from './components/SearchNames'
+import SearchNames from './components/SearchNames/SearchNames'
 import NameList from './components/NameList'
 import dataset from './dataset'
 import { generatePath } from "react-router";
+import styled from '@emotion/styled'
 
+const AppWrapper = styled.div`
+width: 40%;
+border: solid white;
+margin:auto;
+padding: 0 2rem;
+margin-top: 2rem;
+`
 
 function App(props) {
   const initialSearch = props.match.params?.query || ''
@@ -17,10 +24,11 @@ function App(props) {
   }
 
   return (
-    <div className="wrapper">
+    <AppWrapper>
+      <h2>Find your name! 🔎</h2>
       <SearchNames setQuery={setQuery} query={query} updateURL={updateURL} />
       <NameList names={dataset} query={query} />
-    </div>
+    </AppWrapper>
   )
 
 }
